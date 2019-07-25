@@ -1,12 +1,13 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
-  mode: 'development',
+  
   entry:{
     app: './src/index.js',
-    print: './src/print.js'
+    
   }, 
   devtool: 'inline-source-map',
   devServer: {
@@ -21,10 +22,13 @@ module.exports = {
   module: {
       rules: [
           {
-            test: /\.scss$/,
-            use: [ 'style-loader','css-loader',
-             'sass-loader']
-          
+            
+          test: /\.scss$/,
+        use: ExtractTextPlugin.extract(
+          {
+            fallback: 'style-loader',
+            use: ['css-loader', 'sass-loader']
+          })
           },
           {
             test: /\.(png|jp(e*)g|svg)$/,  
@@ -37,6 +41,17 @@ module.exports = {
             }]
         }
       ]
-  }
+  },
+  plugins: [ 
+    new ExtractTextPlugin(
+      {filename: 'style.css'}
+    ),
+    new HtmlWebpackPlugin({
+      inject: false,
+      hash: true,
+      template: './src/index.html',
+      filename: 'index.html'
+    })
+  ]
 
 };
