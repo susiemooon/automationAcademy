@@ -6,7 +6,7 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 module.exports = {
   
   entry:{
-    app: './src/index.js',
+    app: './assets/js/index.js',
     
   }, 
   devtool: 'inline-source-map',
@@ -49,7 +49,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       inject: false,
       hash: true,
-      template: './src/index.html',
+      template: './assets/index.html',
       filename: 'index.html'
     })
   ]

@@ -13,11 +13,24 @@ $bck:  rgba(196, 194, 194, 0.288);
   padding: 0;
   box-sizing: border-box; }
 
-body {
+  body {
   font-family: $fontfamily;
   font-size: $fontsize;
   background-color: $bck;
   
+}
+
+.header-area{
+  
+  background-color: #272b30;
+  color: $color3;
+}
+
+.header {
+  margin: auto;
+  width:60%;
+  padding-top: 20px;
+  padding-bottom: 30px;
 }
 
 .slideshow-container {
@@ -27,18 +40,17 @@ body {
   
 }
 
-.mainContent{
+.hero-area-content{
   margin: auto;
   width:60%;  
   color: $color3;
-  padding-top: 20px;
+  
 }
 
-.mainContent2{
+.slideshow-area-main{
   margin:auto;
   width:60%;
   
-
 }
 
 .content{
@@ -47,7 +59,6 @@ body {
   width:50%;
   font-size: 18px;
   
-
   p{
     padding-top: 10px;
     padding-bottom: 20px;
@@ -60,11 +71,12 @@ body {
 }
 
 
-.naglowek1 {
+.hero-area-header {
   font-weight: 500;
   font-size: 24px;
   
 }
+
 .mySlides {
     display: none;
     background-color: $color1;
@@ -127,6 +139,11 @@ body {
   outline: none;
 }
 
+.btnOne:hover{
+  background-color: $color4;
+  color: $color2;
+}
+
 .btnTwo{
   display: inline-block;
   width: 120px;
@@ -140,6 +157,11 @@ body {
   border: 1px solid $color3;
     
   outline: none;
+}
+
+.btnTwo:hover {
+  background-color: $color3;
+  color: $color1;
 }
 
 .btnThree{
@@ -157,6 +179,12 @@ body {
   outline: none;
 }
 
+.btnThree:hover{
+  
+  box-shadow: 0 2px 6px 0 rgba(201, 199, 199, 0.24), 0 3px 5px 0 rgba(255, 255, 255, 0.19);
+
+}
+
 .btnFour{
   display: inline-block;
   width: 120px;
@@ -172,7 +200,13 @@ body {
   outline: none;
 }
 
-.btnFour1{
+.btnFour:hover{
+  background-color: $color2;
+  color: $color3;
+  
+}
+
+.btn-signup{
   display: inline-block;
   width: 150px;
   height: 36px;
@@ -188,7 +222,13 @@ body {
   outline: none;
 }
 
-.secondPart{
+.btn-signup:hover{
+  background-color: $color2;
+  color: $color3;
+  
+}
+
+.about-area-content{
   
   font-size: 16px;
   margin:auto;
@@ -196,22 +236,22 @@ body {
   padding-top: 40px;
 }
 
-.naglowek2{
+.about-area-header{
   width:57%;
   padding-bottom: 10px;
 }
 
-.aboutFirstLine{
+.about-firstLine{
   height:200px;
 }
 
-.aboutSecondLine{
+.about-secondLine{
   height: 240px;
 }
 
 
 
-.aboutFirst{
+.about-one{
   width:30%;
   float:left;
   padding-right: 35px;
@@ -223,7 +263,7 @@ body {
   
 }
 
-.aboutSecond{
+.about-two{
   width:30%;
   float:left;
   padding-left: 35px;
@@ -234,7 +274,7 @@ body {
   
 }
 
-.aboutThird{
+.about-three{
   width:30%;
   float: right;
   h4{
@@ -244,7 +284,7 @@ body {
   
 }
 
-.aboutLast{
+.about-last{
 
   background-color: $color1;
   color:$color3;
@@ -268,13 +308,13 @@ background: $color4;
 border-radius: 50%;
 }
 
-.thirdPart{
+.quote-area-main{
   background-color: $color3;
   padding-top: 40px;
   padding-bottom: 40px;
 }
 
-.thirdPartContent{
+.quote-area-content{
   margin:auto;
   width:60%;
   p{
@@ -285,7 +325,7 @@ border-radius: 50%;
   }
 }
 
-.commentRight {
+.quote-right {
 width: 70%; 
 float: right;
 margin-left: 26px;
@@ -294,7 +334,7 @@ position: relative;
 border-radius: 15px;
 
 }
-.commentRight:before {
+.quote-right:before {
 content: "";
 width: 0; 
 height: 0;
@@ -306,7 +346,7 @@ border-right: 24px solid $color4;
 border-bottom: 18px solid transparent;
 }
 
-.comText{
+.quote-text{
   padding:35px;
   
   h3 {
@@ -320,7 +360,7 @@ border-bottom: 18px solid transparent;
   }
 }
 
-.commentLeft {
+.quote-left {
 width: 70%; 
 float: left;
 margin-right: 26px;
@@ -328,7 +368,7 @@ background: $color4;
 position: relative;
 border-radius: 10px;
 }
-.commentLeft:before {
+.quote-left:before {
 content: "";
 width: 0; 
 height: 0;
@@ -346,7 +386,7 @@ border-bottom: 18px solid transparent;
   height:300px;
 }
 
-.manLeft{
+.man-left{
   width:25%;
   float:left;
   font-size: 12px;
@@ -360,7 +400,7 @@ border-bottom: 18px solid transparent;
   }
 }
 
-.manRight{
+.man-right{
   padding-left: 65px;
   width:25%;
   float: right;
@@ -378,14 +418,14 @@ border-bottom: 18px solid transparent;
   }
 }
 
-.fourthPart{
+.statistic-area-main{
   background-color: $color1;
   padding-top: 40px;
   padding-bottom: 40px;
   height: 180px;
 }
 
-.numbers{
+.statistic-area-content{
   margin:auto;
   width:60%;
   padding-top:20px;
@@ -393,7 +433,7 @@ border-bottom: 18px solid transparent;
   color: $color3;
 }
 
-.num1{
+.num{
   width:25%;
   float:left;
   padding-right: 50px;
@@ -403,23 +443,6 @@ border-bottom: 18px solid transparent;
   }
 }
 
-.num2{
-  width:23%;
-  float:$center;
-  padding-right: 40px;
-  h2{
-    color: $color2;
-  }
-}
-
-.num3{
-  widows: 20%;
-  float: right;
-  
-  h2{
-    color: $color2;
-  }
-}
 
 @keyframes fadeInUp {
     from {
@@ -460,11 +483,11 @@ border-bottom: 18px solid transparent;
     -webkit-animation-name: fadeInUp;
 }
 
-.fifthPart{
+.courses-area-main{
   background-color: $color3;
 }
 
-.fifthPartContent{  
+.courses-area-content{  
   font-size: 16px;
   margin:auto;
   width:60%;
@@ -479,7 +502,7 @@ border-bottom: 18px solid transparent;
   }
 }
 
-.naglowek3{  
+.courses-area-header{  
   padding-bottom: 30px;
   h4{
     font-size: 24px;
@@ -487,13 +510,13 @@ border-bottom: 18px solid transparent;
   }
 }
 
-.sixPart{
+.companies-area-main{
   background-color: $color3;
   padding-bottom: 40px;
   padding-top: 40px;
 }
 
-.companies{
+.companies-area-content{
   margin:auto;
   width: 60%;
   text-align: $center;
@@ -509,11 +532,11 @@ border-bottom: 18px solid transparent;
   }
 }
 
-.sevenPart{
+.form-area-main{
   height: 580px;
 }
 
-.signUpForm{
+.signup-form{
   margin:auto;
   width:60%;
   padding-top: 40px;
@@ -583,11 +606,75 @@ select {
 .checkbox{
   float:left;
   padding-top: 10px;
+  list-style-type: none;
   b{
     color: $color2;
   }
   p{
     padding: 5px;
+  }
+}
+
+li {
+  margin: 20px 0;
+}
+
+.styled-checkbox {
+  position: absolute; // take it out of document flow
+  opacity: 0; // hide it
+
+  & + label {
+    position: relative;
+    cursor: pointer;
+    padding: 0;
+  }
+
+  // Box.
+  & + label:before {
+    content: '';
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: text-top;
+    width: 20px;
+    height: 20px;
+    background: white;
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
+  }
+
+  // Box hover
+  &:hover + label:before {
+    background: #f35429;
+  }
+  
+  // Box focus
+  &:focus + label:before {
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
+  }
+
+  // Box checked
+  &:checked + label:before {
+    background: #f35429;
+  }
+  
+  
+
+  // Checkmark
+  &:checked + label:after {
+    content: '';
+    position: absolute;
+    left: 5px;
+    top: 9px;
+    background: white;
+    width: 2px;
+    height: 2px;
+    box-shadow: 
+      2px 0 0 white,
+      4px 0 0 white,
+      4px -2px 0 white,
+      4px -4px 0 white,
+      4px -6px 0 white,
+      4px -8px 0 white;
+    transform: rotate(45deg);
   }
 }
 

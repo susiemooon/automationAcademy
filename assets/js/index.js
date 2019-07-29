@@ -1,9 +1,9 @@
 import _ from 'lodash';
-import './base.scss';
-import imgC from './images/companies.png';
+import '../scss/base.scss';
+import imgC from '../images/companies.png';
 
 
-var companies = document.getElementById('imgCompanies');
+var companies = document.getElementById('img-companies');
 companies.src = imgC;
 var slideIndex = 0;
 var dotsIndex = 0;
