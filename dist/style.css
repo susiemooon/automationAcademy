@@ -10,9 +10,12 @@ body {
 
 @media screen and (max-width: 500px) {
   body {
-    font-size: 12px; }
-  h2, h3, h4, h5 {
-    font-size: 16px; } }
+    font-size: 16px; }
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-size: 20px; } }
 
 .header-area {
   background-color: #272b30;
@@ -57,9 +60,9 @@ body {
 @media screen and (max-width: 800px) {
   .content {
     width: auto;
-    font-size: 14px; }
+    font-size: 16px; }
     .content h2 {
-      font-size: 18px; } }
+      font-size: 20px; } }
 
 .hero-area-header {
   font-weight: 500;
@@ -80,7 +83,8 @@ body {
   display: inline-block;
   transition: background-color 0.6s ease; }
 
-.active, .dot:hover {
+.active,
+.dot:hover {
   background-color: #ffffff; }
 
 .dot1 {
@@ -93,7 +97,8 @@ body {
   display: inline-block;
   transition: background-color 0.6s ease; }
 
-.active1, .dot1:hover {
+.active1,
+.dot1:hover {
   background-color: #272b30; }
 
 .fade {
@@ -242,7 +247,7 @@ body {
 
 @media screen and (max-width: 1100px) {
   .about-area-content {
-    font-size: 14px; }
+    font-size: 16px; }
   .about-area-header {
     width: auto; }
   .about-firstLine {
@@ -370,11 +375,11 @@ body {
 
 @media screen and (max-width: 740px) {
   .quotes {
-    font-size: 12px;
+    font-size: 16px;
     display: inline-flex;
     flex-direction: column; }
   .quotes-reverse {
-    font-size: 12px;
+    font-size: 16px;
     display: inline-flex;
     flex-direction: column-reverse; }
   .man-left {
@@ -421,7 +426,7 @@ body {
     padding-bottom: 5px; }
   .num {
     padding-top: 10px;
-    font-size: 12px;
+    font-size: 14px;
     padding-bottom: 10px; }
     .num h2 {
       font-size: 18px; } }
@@ -482,7 +487,7 @@ body {
 
 @media screen and (max-width: 1100px) {
   .courses-area-content {
-    font-size: 14px; }
+    font-size: 16px; }
   .courses-area-header h4 {
     font-size: 18px; } }
 
@@ -506,7 +511,7 @@ body {
 
 @media screen and (max-width: 1100px) {
   .companies-area-content {
-    font-size: 14px; }
+    font-size: 16px; }
     .companies-area-content p {
       width: 90%; } }
 
@@ -525,7 +530,7 @@ body {
   display: flex;
   justify-content: space-between; }
 
-input[type=text] {
+input[type="text"] {
   width: 49%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -533,7 +538,7 @@ input[type=text] {
   border: 1px solid #ffffff;
   border-radius: 5px; }
 
-input[type=text]::placeholder {
+input[type="text"]::placeholder {
   opacity: 1;
   color: black; }
 
@@ -566,14 +571,14 @@ select {
   border: 1px solid #ffffff;
   border-radius: 5px; }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
   .form-area-main {
     height: 800px; }
   .signup-form h2 {
     font-size: 20px; }
   .form-area-content {
     display: block; }
-  input[type=text] {
+  input[type="text"] {
     width: 100%; }
   select {
     width: 100%; } }
@@ -602,7 +607,7 @@ li {
     cursor: pointer;
     padding: 0; }
   .styled-checkbox + label:before {
-    content: '';
+    content: "";
     margin-right: 10px;
     display: inline-block;
     vertical-align: text-top;
@@ -617,14 +622,14 @@ li {
   .styled-checkbox:checked + label:before {
     background: #f35429; }
   .styled-checkbox:checked + label:after {
-    content: '';
+    content: "";
     position: absolute;
     left: 5px;
     top: 9px;
     background: white;
     width: 2px;
     height: 2px;
-    box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white, 4px -6px 0 white, 4px -8px 0 white;
+    box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white, 4px -6px 0 white, 4px -8px 0 white;
     transform: rotate(45deg); }
 
 .footer {

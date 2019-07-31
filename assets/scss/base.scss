@@ -6,114 +6,103 @@ $fontfamily: "Archivo Narrow", sans-serif;
 $fontsize: 14px;
 $fontstyle: bold;
 $center: center;
-$bck:  rgba(196, 194, 194, 0.288);
+$bck: rgba(196, 194, 194, 0.288);
 
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
-  body {
+body {
   font-family: $fontfamily;
   font-size: $fontsize;
   background-color: $bck;
-  
 }
 
-@media screen and (max-width:500px){
-  body{
-    font-size: 12px;
-  }
-  h2, h3, h4, h5 {
+@media screen and (max-width: 500px) {
+  body {
     font-size: 16px;
   }
-
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-size: 20px;
+  }
 }
-.header-area{
-  
+.header-area {
   background-color: #272b30;
   color: $color3;
 }
 
 .header {
   margin: auto;
-  width:60%;
-  
+  width: 60%;
+
   padding-top: 20px;
   padding-bottom: 30px;
 
-  button{
-    float:right;
+  button {
+    float: right;
   }
 }
 
-@media screen and (max-width:640px){
-  .header{
-      margin: auto;
-  width:100%;
-      display: inline-flex;
-      
-    
+@media screen and (max-width: 640px) {
+  .header {
+    margin: auto;
+    width: 100%;
+    display: inline-flex;
   }
-  
 }
 
 .slideshow-container {
-  
   position: relative;
   margin: auto;
-  
 }
 
-.hero-area-content{
+.hero-area-content {
   margin: auto;
-  width:60%;  
+  width: 60%;
   color: $color3;
-  
 }
 
-.slideshow-area-main{
-  margin:auto;
-  width:60%;
-  
+.slideshow-area-main {
+  margin: auto;
+  width: 60%;
 }
 
-.content{
+.content {
   padding-top: 70px;
   padding-bottom: 40px;
-  width:50%;
+  width: 50%;
   font-size: 18px;
-  
-  p{
+
+  p {
     padding-top: 10px;
     padding-bottom: 20px;
-    
   }
-  
 }
 
-@media screen and (max-width: 800px){
-  .content{
-    width:auto;
-    font-size: 14px;
-   h2 {
-      font-size: 18px;
+@media screen and (max-width: 800px) {
+  .content {
+    width: auto;
+    font-size: 16px;
+    h2 {
+      font-size: 20px;
     }
   }
 }
 .hero-area-header {
   font-weight: 500;
   font-size: 24px;
-  
 }
 
 .mySlides {
-    display: none;
-    background-color: $color1;
-    padding-bottom: 20px;
+  display: none;
+  background-color: $color1;
+  padding-bottom: 20px;
 }
-
-
 
 .dot {
   cursor: pointer;
@@ -123,11 +112,12 @@ $bck:  rgba(196, 194, 194, 0.288);
   background-color: rgb(155, 154, 154);
   border-radius: 60%;
   display: inline-block;
-  
+
   transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
+.active,
+.dot:hover {
   background-color: $color3;
 }
 
@@ -139,11 +129,12 @@ $bck:  rgba(196, 194, 194, 0.288);
   background-color: rgb(155, 154, 154);
   border-radius: 50%;
   display: inline-block;
-  
+
   transition: background-color 0.6s ease;
 }
 
-.active1, .dot1:hover {
+.active1,
+.dot1:hover {
   background-color: $color1;
 }
 
@@ -154,7 +145,7 @@ $bck:  rgba(196, 194, 194, 0.288);
   animation-duration: 1.5s;
 }
 
-.btnOne{
+.btnOne {
   display: inline-block;
   width: 120px;
   height: 32px;
@@ -165,16 +156,16 @@ $bck:  rgba(196, 194, 194, 0.288);
   background-color: $color2;
   border-radius: 35px;
   border: 1px solid $color2;
-  position: relative;  
+  position: relative;
   outline: none;
 }
 
-.btnOne:hover{
+.btnOne:hover {
   background-color: $color4;
   color: $color2;
 }
 
-.btnTwo{
+.btnTwo {
   display: inline-block;
   width: 120px;
   height: 32px;
@@ -182,10 +173,10 @@ $bck:  rgba(196, 194, 194, 0.288);
   text-align: $center;
   color: $color3;
   text-decoration: none;
-  background-color: rgba(0,0,0,0.075);
+  background-color: rgba(0, 0, 0, 0.075);
   border-radius: 35px;
   border: 1px solid $color3;
-    
+
   outline: none;
 }
 
@@ -194,7 +185,7 @@ $bck:  rgba(196, 194, 194, 0.288);
   color: $color1;
 }
 
-.btnThree{
+.btnThree {
   display: inline-block;
   width: 120px;
   height: 32px;
@@ -205,17 +196,15 @@ $bck:  rgba(196, 194, 194, 0.288);
   background-color: rgba(0, 0, 0, 0);
   border-radius: 35px;
   border: 1px solid rgba(0, 0, 0, 0.027);
-    
+
   outline: none;
 }
 
-.btnThree:hover{
-  
+.btnThree:hover {
   box-shadow: 0 2px 6px 0 rgba(201, 199, 199, 0.24), 0 3px 5px 0 rgba(255, 255, 255, 0.19);
-
 }
 
-.btnFour{
+.btnFour {
   display: inline-block;
   width: 120px;
   height: 32px;
@@ -226,208 +215,192 @@ $bck:  rgba(196, 194, 194, 0.288);
   background-color: $color3;
   border-radius: 35px;
   border: 1px solid $color2;
-  position: relative;  
+  position: relative;
   outline: none;
 }
 
-.btnFour:hover{
+.btnFour:hover {
   background-color: $color2;
   color: $color3;
-  
 }
 
-.btn-signup{
+.btn-signup {
   display: inline-block;
   width: 150px;
   height: 36px;
-  box-sizing: border-box;  
+  box-sizing: border-box;
   text-align: $center;
   color: $color2;
   text-decoration: none;
   background-color: rgba(0, 0, 0, 0.0001);
   border-radius: 35px;
-  font-size:16px;
+  font-size: 16px;
   border: 1.7px solid $color2;
-  position: relative;  
+  position: relative;
   outline: none;
 }
 
-.btn-signup:hover{
+.btn-signup:hover {
   background-color: $color2;
   color: $color3;
-  
 }
 
-.about-area-content{
-  
+.about-area-content {
   font-size: 16px;
-  margin:auto;
-  width:60%;
+  margin: auto;
+  width: 60%;
   padding-top: 40px;
 }
 
-.about-area-header{
-  width:57%;
+.about-area-header {
+  width: 57%;
   padding-bottom: 10px;
 }
 
-.about-firstLine{
+.about-firstLine {
   display: -webkit-inline-flex;
- display: inline-flex;
- justify-content: space-between;
- 
+  display: inline-flex;
+  justify-content: space-between;
 }
 
-.about-secondLine{
+.about-secondLine {
   display: -webkit-inline-flex;
- display: inline-flex;
- justify-content: space-between;
+  display: inline-flex;
+  justify-content: space-between;
 }
 
+.about-one {
+  width: 30%;
 
-.about-one{
-  width:30%;
-  
-  h4{
+  h4 {
     padding-bottom: 10px;
     padding-top: 10px;
   }
-  
 }
 
-.about-two{
-  width:30%;
-  
-  h4{
+.about-two {
+  width: 30%;
+
+  h4 {
     padding-bottom: 10px;
     padding-top: 10px;
   }
-  
 }
 
-.about-three{
-  width:30%;
-  
-  h4{
+.about-three {
+  width: 30%;
+
+  h4 {
     padding-bottom: 10px;
     padding-top: 10px;
   }
-  
 }
 
-.about-last{
-
+.about-last {
   background-color: $color1;
-  color:$color3;
-  width:30%;
+  color: $color3;
+  width: 30%;
   padding: 20px;
   border-radius: 15%;
- 
-  h4{
+
+  h4 {
     padding-bottom: 10px;
     padding-top: 10px;
   }
-  p{
+  p {
     padding-bottom: 15px;
   }
 }
 
-@media screen and (max-width: 1100px){
-  .about-area-content{
-    font-size: 14px;
-    
+@media screen and (max-width: 1100px) {
+  .about-area-content {
+    font-size: 16px;
   }
-  .about-area-header{
-    width:auto;
+  .about-area-header {
+    width: auto;
   }
-  .about-firstLine{
+  .about-firstLine {
     display: inline-flex;
     flex-direction: column;
-    
   }
-  .about-secondLine{
+  .about-secondLine {
     display: inline-flex;
     flex-direction: column;
   }
 
-  .about-one{
+  .about-one {
     width: auto;
   }
 
-  .about-two{
-    width:auto;
+  .about-two {
+    width: auto;
     padding-bottom: 20px;
   }
 
-  .about-three{
-    width:auto;
+  .about-three {
+    width: auto;
   }
-  .about-last{
-    
-    width:60%;
-  }
-  
-}
-
-@media screen and (max-width:570px){
-  .about-last{
-    width:auto;
+  .about-last {
+    width: 60%;
   }
 }
 
-.photo{
-  width: 130px; 
-height: 130px;
-background: $color4;
-border-radius: 50%;
+@media screen and (max-width: 570px) {
+  .about-last {
+    width: auto;
+  }
 }
 
-.quote-area-main{
+.photo {
+  width: 130px;
+  height: 130px;
+  background: $color4;
+  border-radius: 50%;
+}
+
+.quote-area-main {
   background-color: $color3;
   padding-top: 40px;
   padding-bottom: 40px;
   display: inline-flex;
 }
 
-.quote-area-content{
-  margin:auto;
-  width:60%;
-  
-  p{
-    a{
-      color:$color2;
+.quote-area-content {
+  margin: auto;
+  width: 60%;
+
+  p {
+    a {
+      color: $color2;
       font-weight: 600;
     }
   }
 }
 
 .quote-right {
-width: 70%; 
-padding: 35px;
+  width: 70%;
+  padding: 35px;
 
-margin-left: 26px;
-background: $color4;
-position: relative;
-border-radius: 15px;
-
+  margin-left: 26px;
+  background: $color4;
+  position: relative;
+  border-radius: 15px;
 }
 .quote-right:before {
-content: "";
-width: 0; 
-height: 0;
-position: absolute; 
-right: 100%; 
-top: calc(20% - 12px);
-border-top: 0px solid transparent;
-border-right: 24px solid $color4;
-border-bottom: 18px solid transparent;
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  right: 100%;
+  top: calc(20% - 12px);
+  border-top: 0px solid transparent;
+  border-right: 24px solid $color4;
+  border-bottom: 18px solid transparent;
 }
 
-.quote-text{
-  
-  
+.quote-text {
   h3 {
-    width:75%;
+    width: 75%;
     padding-bottom: 20px;
   }
   p {
@@ -438,224 +411,212 @@ border-bottom: 18px solid transparent;
 }
 
 .quote-left {
-width: 70%; 
-padding: 35px;
-margin-right: 26px;
-background: $color4;
-position: relative;
-border-radius: 10px;
+  width: 70%;
+  padding: 35px;
+  margin-right: 26px;
+  background: $color4;
+  position: relative;
+  border-radius: 10px;
 }
 .quote-left:before {
-content: "";
-width: 0; 
-height: 0;
-position: absolute; 
-left: 100%; 
-top: calc(20% - 12px);
-border-top: 0px solid transparent;
-border-left: 24px solid $color4;
-border-bottom: 18px solid transparent;
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  left: 100%;
+  top: calc(20% - 12px);
+  border-top: 0px solid transparent;
+  border-left: 24px solid $color4;
+  border-bottom: 18px solid transparent;
 }
 
-.quotes{
-  padding-top:30px;
-  padding-bottom:30px;
-  
+.quotes {
+  padding-top: 30px;
+  padding-bottom: 30px;
+
   display: -webkit-inline-flex;
- display: inline-flex;
+  display: inline-flex;
 }
 
-.quotes-reverse{
-  
-  padding-bottom:30px;
-  
+.quotes-reverse {
+  padding-bottom: 30px;
+
   display: -webkit-inline-flex;
- display: inline-flex;
+  display: inline-flex;
 }
 
-.man-left{
-  width:25%;
-  
+.man-left {
+  width: 25%;
+
   font-size: 12px;
   h4 {
-    padding:10px;
-    
+    padding: 10px;
   }
-  p{
+  p {
     text-align: center;
-    width:60%;
+    width: 60%;
   }
 }
 
-.man-right{
+.man-right {
   padding-left: 65px;
-  width:25%;
-  
-  font-size:12px;
-  
-  h4{
-    padding:10px;
+  width: 25%;
+
+  font-size: 12px;
+
+  h4 {
+    padding: 10px;
     text-align: center;
-    width:85%;
-    margin:auto;
+    width: 85%;
+    margin: auto;
   }
-  p{
+  p {
     text-align: center;
-    
   }
 }
 
-@media screen and (max-width: 1100px){
-  .quote-area-content{
-    width:auto;    
+@media screen and (max-width: 1100px) {
+  .quote-area-content {
+    width: auto;
     margin: 10px;
-  }  
-  
+  }
 }
 
-@media screen and (max-width: 740px){
-  .quotes{
-    
-    font-size: 12px;
+@media screen and (max-width: 740px) {
+  .quotes {
+    font-size: 16px;
     display: inline-flex;
     flex-direction: column;
   }
-  .quotes-reverse{
-    
-    font-size: 12px;
+  .quotes-reverse {
+    font-size: 16px;
     display: inline-flex;
     flex-direction: column-reverse;
   }
-  .man-left{
+  .man-left {
     padding-bottom: 10px;
-    margin:auto;
+    margin: auto;
     width: 60%;
-    p{
+    p {
       text-align: left;
     }
   }
-  .man-right{
-    margin:auto;
-    width:60%;
+  .man-right {
+    margin: auto;
+    width: 60%;
     padding-left: 5px;
     padding-bottom: 10px;
-    h4{
+    h4 {
       text-align: left;
       width: auto;
     }
-    p{
+    p {
       text-align: left;
     }
   }
-  .quote-left{
+  .quote-left {
     margin-left: 25px;
   }
 }
 
-.statistic-area-main{
+.statistic-area-main {
   background-color: $color1;
   padding-top: 40px;
   padding-bottom: 40px;
-  
 }
 
-.statistic-area-content{
-  
-  margin:auto;
-  width:60%;
+.statistic-area-content {
+  margin: auto;
+  width: 60%;
   display: flex;
-  
+
   color: $color3;
 }
 
-.num{
-  width:25%;
-  float:left;
+.num {
+  width: 25%;
+  float: left;
   padding-right: 50px;
-  h2{
+  h2 {
     font-size: 26px;
     color: $color2;
   }
 }
 
-@media screen and (max-width: 800px){
-  .statistic-area-main{
-  
-  padding-top:5px;
-  padding-bottom: 5px;
-  
-}
-  .num{
+@media screen and (max-width: 800px) {
+  .statistic-area-main {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  .num {
     padding-top: 10px;
-    
-    font-size: 12px;
+
+    font-size: 14px;
     padding-bottom: 10px;
-    h2{
+    h2 {
       font-size: 18px;
     }
   }
 }
 
-@media screen and (max-width: 500px){
-  .num{
-    width:auto;
-  }  
+@media screen and (max-width: 500px) {
+  .num {
+    width: auto;
+  }
 }
 
 @keyframes fadeInUp {
-    from {
-        transform: translate3d(0,40px,0)
-    }
+  from {
+    transform: translate3d(0, 40px, 0);
+  }
 
-    to {
-        transform: translate3d(0,0,0);
-        opacity: 1
-    }
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
 }
 
 @-webkit-keyframes fadeInUp {
-    from {
-        transform: translate3d(0,40px,0)
-    }
+  from {
+    transform: translate3d(0, 40px, 0);
+  }
 
-    to {
-        transform: translate3d(0,0,0);
-        opacity: 1
-    }
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
 }
 
 .animated {
-    animation-duration: 1s;
-    animation-fill-mode: both;
-    -webkit-animation-duration: 1s;
-    -webkit-animation-fill-mode: both
-    
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
 }
 
 .animatedFadeInUp {
-    opacity: 0
+  opacity: 0;
 }
 
 .fadeInUp {
-    opacity: 0;
-    animation-name: fadeInUp;
-    -webkit-animation-name: fadeInUp;
+  opacity: 0;
+  animation-name: fadeInUp;
+  -webkit-animation-name: fadeInUp;
 }
 
-.courses-area-main{
+.courses-area-main {
   background-color: $color3;
-
 }
 
-.courses-area-content{  
+.courses-area-content {
   font-size: 16px;
-  margin:auto;
-  width:60%;
+  margin: auto;
+  width: 60%;
   padding-top: 40px;
-  padding-bottom:40px;
-  p{
+  padding-bottom: 40px;
+  p {
     padding-top: 10px;
-    a{
+    a {
       color: $color2;
       font-weight: 600;
       padding-top: 20px;
@@ -663,89 +624,86 @@ border-bottom: 18px solid transparent;
   }
 }
 
-.courses-area-header{  
+.courses-area-header {
   padding-bottom: 30px;
-  h4{
+  h4 {
     font-size: 24px;
     padding-bottom: 20px;
   }
 }
 
-@media screen and (max-width:1100px){
-  .courses-area-content{
-    font-size: 14px;
-
+@media screen and (max-width: 1100px) {
+  .courses-area-content {
+    font-size: 16px;
   }
-  .courses-area-header{
-    h4{
+  .courses-area-header {
+    h4 {
       font-size: 18px;
     }
   }
 }
-.companies-area-main{
+.companies-area-main {
   background-color: $color3;
   padding-bottom: 40px;
   padding-top: 40px;
 }
 
-.companies-area-content{
-  margin:auto;
+.companies-area-content {
+  margin: auto;
   width: 60%;
   text-align: $center;
   font-size: 18px;
   h4 {
     padding-top: 20px;
-    padding-bottom:10px;
+    padding-bottom: 10px;
   }
-  p{
-    width:50%;
-    margin:auto;
+  p {
+    width: 50%;
+    margin: auto;
     padding-bottom: 20px;
   }
 }
 
-@media screen and (max-width:1100px){
-  .companies-area-content{
-    font-size: 14px;
-    p{
+@media screen and (max-width: 1100px) {
+  .companies-area-content {
+    font-size: 16px;
+    p {
       width: 90%;
     }
   }
 }
 
-.form-area-main{
+.form-area-main {
   height: 580px;
 }
 
-.signup-form{
-  margin:auto;
-  width:60%;
+.signup-form {
+  margin: auto;
+  width: 60%;
   padding-top: 40px;
-  
+
   h2 {
     font-size: 32px;
     padding-bottom: 20px;
   }
 }
 
-.form-area-content{
+.form-area-content {
   display: flex;
   justify-content: space-between;
 }
 
-input[type=text] {
+input[type="text"] {
   width: 49%;
   padding: 12px 20px;
   margin: 8px 0;
   box-sizing: border-box;
   border: 1px solid $color3;
   border-radius: 5px;
-  
 }
-input[type=text]::placeholder{
-  opacity:1;
-  color:black;
-  
+input[type="text"]::placeholder {
+  opacity: 1;
+  color: black;
 }
 .input-placeholder {
   position: relative;
@@ -761,14 +719,14 @@ input[type=text]::placeholder{
   top: 0;
   bottom: 0;
   height: 25px;
-  padding: 3px;  
+  padding: 3px;
   left: 22px;
   margin: auto;
   color: black;
 }
 
 .placeholder span {
-  color:$color2;
+  color: $color2;
   font-weight: 800;
 }
 
@@ -779,43 +737,49 @@ select {
   box-sizing: border-box;
   border: 1px solid $color3;
   border-radius: 5px;
-  
 }
 
-@media screen and (max-width:800px){
-  .form-area-main{
+@media screen and (max-width: 900px) {
+  .form-area-main {
     height: 800px;
   }
-  .signup-form{
+  .signup-form {
+    
     h2 {
       font-size: 20px;
     }
   }
-  .form-area-content{
+  .form-area-content {
     display: block;
   }
-  input[type=text] {
-    width: 100%;    
+  input[type="text"] {
+    width: 100%;
   }
-  select{
-    width:100%;
+  select {
+    width: 100%;
   }
 }
 
-.signbtn{
+@media screen and (max-width: 650px){
+  .signup-form {
+    margin: 10px;
+    width: 90%;
+  }
+}
+
+.signbtn {
   float: right;
   padding-top: 20px;
-  
 }
 
-.checkbox{
-  float:left;
+.checkbox {
+  float: left;
   padding-top: 10px;
   list-style-type: none;
-  b{
+  b {
     color: $color2;
   }
-  p{
+  p {
     padding: 5px;
   }
 }
@@ -836,7 +800,7 @@ li {
 
   // Box.
   & + label:before {
-    content: '';
+    content: "";
     margin-right: 10px;
     display: inline-block;
     vertical-align: text-top;
@@ -850,7 +814,7 @@ li {
   &:hover + label:before {
     background: #f35429;
   }
-  
+
   // Box focus
   &:focus + label:before {
     box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
@@ -860,45 +824,37 @@ li {
   &:checked + label:before {
     background: #f35429;
   }
-  
-  
 
   // Checkmark
   &:checked + label:after {
-    content: '';
+    content: "";
     position: absolute;
     left: 5px;
     top: 9px;
     background: white;
     width: 2px;
     height: 2px;
-    box-shadow: 
-      2px 0 0 white,
-      4px 0 0 white,
-      4px -2px 0 white,
-      4px -4px 0 white,
-      4px -6px 0 white,
-      4px -8px 0 white;
+    box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white, 4px -6px 0 white, 4px -8px 0 white;
     transform: rotate(45deg);
   }
 }
 
-.footer{
-  p{
-  margin:auto;
-  width:67%;
-  padding-top: 40px;
-  
-  font-size: 12px;
-  font-weight: lighter;
+.footer {
+  p {
+    margin: auto;
+    width: 67%;
+    padding-top: 40px;
+
+    font-size: 12px;
+    font-weight: lighter;
   }
   border-top: 1px solid $color2;
   height: 80px;
 }
 
-@media screen and (max-width: 700px){
-  .footer{
-    font-size:10px;
+@media screen and (max-width: 700px) {
+  .footer {
+    font-size: 10px;
     width: auto;
   }
 }
