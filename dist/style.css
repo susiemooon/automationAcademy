@@ -8,6 +8,12 @@ body {
   font-size: 14px;
   background-color: rgba(196, 194, 194, 0.288); }
 
+@media screen and (max-width: 500px) {
+  body {
+    font-size: 12px; }
+  h2, h3, h4, h5 {
+    font-size: 16px; } }
+
 .header-area {
   background-color: #272b30;
   color: #ffffff; }
@@ -17,6 +23,14 @@ body {
   width: 60%;
   padding-top: 20px;
   padding-bottom: 30px; }
+  .header button {
+    float: right; }
+
+@media screen and (max-width: 640px) {
+  .header {
+    margin: auto;
+    width: 100%;
+    display: inline-flex; } }
 
 .slideshow-container {
   position: relative;
@@ -39,9 +53,13 @@ body {
   .content p {
     padding-top: 10px;
     padding-bottom: 20px; }
-  .content h1 {
-    color: #fc4710;
-    padding-top: 40px; }
+
+@media screen and (max-width: 800px) {
+  .content {
+    width: auto;
+    font-size: 14px; }
+    .content h2 {
+      font-size: 18px; } }
 
 .hero-area-header {
   font-weight: 500;
@@ -183,30 +201,29 @@ body {
   padding-bottom: 10px; }
 
 .about-firstLine {
-  height: 200px; }
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  justify-content: space-between; }
 
 .about-secondLine {
-  height: 240px; }
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  justify-content: space-between; }
 
 .about-one {
-  width: 30%;
-  float: left;
-  padding-right: 35px; }
+  width: 30%; }
   .about-one h4 {
     padding-bottom: 10px;
     padding-top: 10px; }
 
 .about-two {
-  width: 30%;
-  float: left;
-  padding-left: 35px; }
+  width: 30%; }
   .about-two h4 {
     padding-bottom: 10px;
     padding-top: 10px; }
 
 .about-three {
-  width: 30%;
-  float: right; }
+  width: 30%; }
   .about-three h4 {
     padding-bottom: 10px;
     padding-top: 10px; }
@@ -216,13 +233,37 @@ body {
   color: #ffffff;
   width: 30%;
   padding: 20px;
-  border-radius: 15%;
-  float: right; }
+  border-radius: 15%; }
   .about-last h4 {
     padding-bottom: 10px;
     padding-top: 10px; }
   .about-last p {
     padding-bottom: 15px; }
+
+@media screen and (max-width: 1100px) {
+  .about-area-content {
+    font-size: 14px; }
+  .about-area-header {
+    width: auto; }
+  .about-firstLine {
+    display: inline-flex;
+    flex-direction: column; }
+  .about-secondLine {
+    display: inline-flex;
+    flex-direction: column; }
+  .about-one {
+    width: auto; }
+  .about-two {
+    width: auto;
+    padding-bottom: 20px; }
+  .about-three {
+    width: auto; }
+  .about-last {
+    width: 60%; } }
+
+@media screen and (max-width: 570px) {
+  .about-last {
+    width: auto; } }
 
 .photo {
   width: 130px;
@@ -233,7 +274,8 @@ body {
 .quote-area-main {
   background-color: #ffffff;
   padding-top: 40px;
-  padding-bottom: 40px; }
+  padding-bottom: 40px;
+  display: inline-flex; }
 
 .quote-area-content {
   margin: auto;
@@ -244,7 +286,7 @@ body {
 
 .quote-right {
   width: 70%;
-  float: right;
+  padding: 35px;
   margin-left: 26px;
   background: #e4e4e4;
   position: relative;
@@ -261,19 +303,18 @@ body {
   border-right: 24px solid #e4e4e4;
   border-bottom: 18px solid transparent; }
 
-.quote-text {
-  padding: 35px; }
-  .quote-text h3 {
-    width: 75%;
-    padding-bottom: 20px; }
-  .quote-text p {
-    color: #fc4710;
-    font-weight: 700;
-    padding-top: 20px; }
+.quote-text h3 {
+  width: 75%;
+  padding-bottom: 20px; }
+
+.quote-text p {
+  color: #fc4710;
+  font-weight: 700;
+  padding-top: 20px; }
 
 .quote-left {
   width: 70%;
-  float: left;
+  padding: 35px;
   margin-right: 26px;
   background: #e4e4e4;
   position: relative;
@@ -293,11 +334,16 @@ body {
 .quotes {
   padding-top: 30px;
   padding-bottom: 30px;
-  height: 300px; }
+  display: -webkit-inline-flex;
+  display: inline-flex; }
+
+.quotes-reverse {
+  padding-bottom: 30px;
+  display: -webkit-inline-flex;
+  display: inline-flex; }
 
 .man-left {
   width: 25%;
-  float: left;
   font-size: 12px; }
   .man-left h4 {
     padding: 10px; }
@@ -308,7 +354,6 @@ body {
 .man-right {
   padding-left: 65px;
   width: 25%;
-  float: right;
   font-size: 12px; }
   .man-right h4 {
     padding: 10px;
@@ -318,17 +363,48 @@ body {
   .man-right p {
     text-align: center; }
 
+@media screen and (max-width: 1100px) {
+  .quote-area-content {
+    width: auto;
+    margin: 10px; } }
+
+@media screen and (max-width: 740px) {
+  .quotes {
+    font-size: 12px;
+    display: inline-flex;
+    flex-direction: column; }
+  .quotes-reverse {
+    font-size: 12px;
+    display: inline-flex;
+    flex-direction: column-reverse; }
+  .man-left {
+    padding-bottom: 10px;
+    margin: auto;
+    width: 60%; }
+    .man-left p {
+      text-align: left; }
+  .man-right {
+    margin: auto;
+    width: 60%;
+    padding-left: 5px;
+    padding-bottom: 10px; }
+    .man-right h4 {
+      text-align: left;
+      width: auto; }
+    .man-right p {
+      text-align: left; }
+  .quote-left {
+    margin-left: 25px; } }
+
 .statistic-area-main {
   background-color: #272b30;
   padding-top: 40px;
-  padding-bottom: 40px;
-  height: 180px; }
+  padding-bottom: 40px; }
 
 .statistic-area-content {
   margin: auto;
   width: 60%;
-  padding-top: 20px;
-  padding-bottom: 40px;
+  display: flex;
   color: #ffffff; }
 
 .num {
@@ -338,6 +414,21 @@ body {
   .num h2 {
     font-size: 26px;
     color: #fc4710; }
+
+@media screen and (max-width: 800px) {
+  .statistic-area-main {
+    padding-top: 5px;
+    padding-bottom: 5px; }
+  .num {
+    padding-top: 10px;
+    font-size: 12px;
+    padding-bottom: 10px; }
+    .num h2 {
+      font-size: 18px; } }
+
+@media screen and (max-width: 500px) {
+  .num {
+    width: auto; } }
 
 @keyframes fadeInUp {
   from {
@@ -374,7 +465,8 @@ body {
   font-size: 16px;
   margin: auto;
   width: 60%;
-  padding-top: 40px; }
+  padding-top: 40px;
+  padding-bottom: 40px; }
   .courses-area-content p {
     padding-top: 10px; }
     .courses-area-content p a {
@@ -387,6 +479,12 @@ body {
   .courses-area-header h4 {
     font-size: 24px;
     padding-bottom: 20px; }
+
+@media screen and (max-width: 1100px) {
+  .courses-area-content {
+    font-size: 14px; }
+  .courses-area-header h4 {
+    font-size: 18px; } }
 
 .companies-area-main {
   background-color: #ffffff;
@@ -406,6 +504,12 @@ body {
     margin: auto;
     padding-bottom: 20px; }
 
+@media screen and (max-width: 1100px) {
+  .companies-area-content {
+    font-size: 14px; }
+    .companies-area-content p {
+      width: 90%; } }
+
 .form-area-main {
   height: 580px; }
 
@@ -416,6 +520,10 @@ body {
   .signup-form h2 {
     font-size: 32px;
     padding-bottom: 20px; }
+
+.form-area-content {
+  display: flex;
+  justify-content: space-between; }
 
 input[type=text] {
   width: 49%;
@@ -457,6 +565,18 @@ select {
   box-sizing: border-box;
   border: 1px solid #ffffff;
   border-radius: 5px; }
+
+@media screen and (max-width: 800px) {
+  .form-area-main {
+    height: 800px; }
+  .signup-form h2 {
+    font-size: 20px; }
+  .form-area-content {
+    display: block; }
+  input[type=text] {
+    width: 100%; }
+  select {
+    width: 100%; } }
 
 .signbtn {
   float: right;
@@ -516,5 +636,10 @@ li {
     padding-top: 40px;
     font-size: 12px;
     font-weight: lighter; }
+
+@media screen and (max-width: 700px) {
+  .footer {
+    font-size: 10px;
+    width: auto; } }
 
 /*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzdHlsZS5jc3MiLCJzb3VyY2VSb290IjoiIn0=*/
