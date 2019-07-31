@@ -20,17 +20,7 @@ body {
   background-color: $bck;
 }
 
-@media screen and (max-width: 500px) {
-  body {
-    font-size: 16px;
-  }
-  h2,
-  h3,
-  h4,
-  h5 {
-    font-size: 20px;
-  }
-}
+
 .header-area {
   background-color: #272b30;
   color: $color3;
@@ -77,22 +67,26 @@ body {
   padding-bottom: 40px;
   width: 50%;
   font-size: 18px;
-
+  @media screen and (max-width:800){
+    width:auto;
+  }
   p {
     padding-top: 10px;
     padding-bottom: 20px;
   }
 }
 
-@media screen and (max-width: 800px) {
+
+@media screen and (max-width: 1100px) {
   .content {
-    width: auto;
+    
     font-size: 16px;
     h2 {
       font-size: 20px;
     }
   }
 }
+
 .hero-area-header {
   font-weight: 500;
   font-size: 24px;
@@ -739,7 +733,7 @@ select {
   border-radius: 5px;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1100px) {
   .form-area-main {
     height: 800px;
   }
@@ -854,7 +848,19 @@ li {
 
 @media screen and (max-width: 700px) {
   .footer {
-    font-size: 10px;
+    font-size: 14px;
     width: auto;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  body {
+    font-size: 18px;
+  }
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-size: 22px;
   }
 }
