@@ -44,15 +44,13 @@ body {
   padding-bottom: 40px;
   width: 50%;
   font-size: 18px; }
-  @media screen and (max-width: 800) {
-    .content {
-      width: auto; } }
   .content p {
     padding-top: 10px;
     padding-bottom: 20px; }
 
 @media screen and (max-width: 1100px) {
   .content {
+    width: auto;
     font-size: 16px; }
     .content h2 {
       font-size: 20px; } }
@@ -419,10 +417,10 @@ body {
     padding-bottom: 5px; }
   .num {
     padding-top: 10px;
-    font-size: 14px;
+    font-size: 16px;
     padding-bottom: 10px; }
     .num h2 {
-      font-size: 18px; } }
+      font-size: 20px; } }
 
 @media screen and (max-width: 500px) {
   .num {
@@ -482,7 +480,7 @@ body {
   .courses-area-content {
     font-size: 16px; }
   .courses-area-header h4 {
-    font-size: 18px; } }
+    font-size: 20px; } }
 
 .companies-area-main {
   background-color: #ffffff;
@@ -643,7 +641,8 @@ li {
 @media screen and (max-width: 700px) {
   .footer {
     font-size: 14px;
-    width: auto; } }
+    width: auto;
+    padding-bottom: 10px; } }
 
 @media screen and (max-width: 1100px) {
   body {
